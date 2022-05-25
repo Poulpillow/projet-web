@@ -1,9 +1,7 @@
 <template>
-  <div class="footer">
     <footer>
-        <p>Clémence Voegelé | IMAC2 | 2022 © Tous droits réservés</p>
+        <h3>Clémence Voegelé | 2022 | All right reserved</h3>
     </footer>
-  </div>
 </template>
 
 <script>
@@ -12,9 +10,10 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.footer {
-    color: blue;
+footer {
+    background: #a9f1df9f;
+    padding: 20px;
+    border-top: 4px solid #ffffff;
 }
 </style>

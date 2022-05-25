@@ -1,34 +1,36 @@
 <template>
   <div id="app">
     <Header/>
-    <Map/>
-    <Select/>
-    <Flag/>
+    <Flags/>
     <Footer/>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Map from './components/Map.vue'
-import Select from './components/Select.vue'
-import Flag from './components/Flag.vue'
-import Footer from './components/Footer.vue'
+import Flags from './components/Flags.vue'
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
+    Flags,
     Header,
-    Map,
-    Select,
-    Flag,
     Footer
-}
+},
+  data() {
+      return {
+        isModalVisible: false,
+      };
+    },
+    methods: {
+      showModal() {
+        this.isModalVisible = true;
+      },
+      closeModal() {
+        this.isModalVisible = false;
+      }
+    }
 }
 </script>
 
-<style>
-#app {
-  color: black;
-}
-</style>
