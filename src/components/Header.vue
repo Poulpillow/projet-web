@@ -28,4 +28,39 @@ header {
 header>h1 {
     margin: 0;
 }
+
+@media (max-width: 599px) {
+    header>h1 {
+    transform: scale(0.6)
+  }
+  header>h2 {
+    transform: scale(0.6)
+  }
+}
+
+@media (min-width: 600px) and (max-width: 904px) {
+    header>h1 {
+    transform: scale(0.7)
+  }
+  header>h2 {
+    transform: scale(0.7)
+  }
+}
+
+@media (min-width: 905px) and (max-width: 1229px) {
+    header>h1 {
+    transform: scale(0.8)
+  }
+  header>h2 {
+    transform: scale(0.8)
+  }
+}  
+@media (min-width: 1230px) and (max-width: 1505px) {
+    header>h1 {
+    transform: scale(0.9)
+  }
+  header>h2 {
+    transform: scale(0.9)
+  }
+}
 </style>

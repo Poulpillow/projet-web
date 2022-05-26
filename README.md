@@ -1,6 +1,8 @@
-# projet-web
+# What's New ?
+## Click on a country to check its daily news !
+## 54 countries available !
 
-## Project setup
+### Project setup
 ```
 npm install
 ```

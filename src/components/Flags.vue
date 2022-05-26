@@ -1,6 +1,6 @@
 <template>
   <div id="flags">
-    <Flag v-for="flag in flags" :key="flag.pays" :pays="flag.pays" :country="flag.country" :picture="flag.picture"/>
+    <Flag v-for="flag in flags" :key="flag.country" :country="flag.country" :name="flag.name" :picture="flag.picture"/>
   </div>
 </template>
 
@@ -32,5 +32,29 @@ export default {
     justify-self: center;
     align-self: center;
     transition: 0.4s;
+}
+
+@media (max-width: 599px) {
+    #flags {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 904px) {
+    #flags {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 905px) and (max-width: 1229px) {
+    #flags {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}  
+@media (min-width: 1230px) and (max-width: 1505px) {
+#flags {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 }
 </style>

@@ -1,272 +1,272 @@
 const flags = [
   {
-    'pays': 'ae',
-    'country': 'Emirats Arabes Unis',
+    'country': 'ae',
+    'name': 'United Arab Emirates',
     'picture': require('@/assets/Flags/ae.png')
   },
   {
-    'pays': 'ar',
-    'country': 'Argentine',
+    'country': 'ar',
+    'name': 'Argentina',
     'picture': require('@/assets/Flags/ar.png')
   },
   {
-    'pays': 'at',
-    'country': 'Autriche',
+    'country': 'at',
+    'name': 'Austria',
     'picture': require('@/assets/Flags/at.png')
   },
   {
-    'pays': 'au',
-    'country': 'Australie',
+    'country': 'au',
+    'name': 'Australia',
     'picture': require('@/assets/Flags/au.png')
   },
   {
-    'pays': 'be',
-    'country': 'Belgique',
+    'country': 'be',
+    'name': 'Belgium',
     'picture': require('@/assets/Flags/be.png')
   },
   {
-    'pays': 'bg',
-    'country': 'Bulgarie',
+    'country': 'bg',
+    'name': 'Bulgaria',
     'picture': require('@/assets/Flags/bg.png')
   },
   {
-    'pays': 'br',
-    'country': 'Brésil',
+    'country': 'br',
+    'name': 'Brasil',
     'picture': require('@/assets/Flags/br.png')
   },
   {
-    'pays': 'ca',
-    'country': 'Canada',
+    'country': 'ca',
+    'name': 'Canada',
     'picture': require('@/assets/Flags/ca.png')
   },
   {
-    'pays': 'ch',
-    'country': 'Suisse',
+    'country': 'ch',
+    'name': 'Switzerland',
     'picture': require('@/assets/Flags/ch.png')
   },
   {
-    'pays': 'cn',
-    'country': 'Chine',
+    'country': 'cn',
+    'name': 'China',
     'picture': require('@/assets/Flags/cn.png')
   },
   {
-    'pays': 'co',
-    'country': 'Colombie',
+    'country': 'co',
+    'name': 'Colombia',
     'picture': require('@/assets/Flags/co.png')
   },
   {
-    'pays': 'cu',
-    'country': 'Cuba',
+    'country': 'cu',
+    'name': 'Cuba',
     'picture': require('@/assets/Flags/cu.png')
   },
   {
-    'pays': 'cz',
-    'country': 'Tchéquie',
+    'country': 'cz',
+    'name': 'Czech Republic',
     'picture': require('@/assets/Flags/cz.png')
   },
   {
-    'pays': 'de',
-    'country': 'Allemagne',
+    'country': 'de',
+    'name': 'Germany',
     'picture': require('@/assets/Flags/de.png')
   },
   {
-    'pays': 'eg',
-    'country': 'Egypte',
+    'country': 'eg',
+    'name': 'Egypt',
     'picture': require('@/assets/Flags/eg.png')
   },
   {
-    'pays': 'fr',
-    'country': 'France',
+    'country': 'fr',
+    'name': 'France',
     'picture': require('@/assets/Flags/fr.png')
   },
   {
-    'pays': 'gb',
-    'country': 'Angleterre',
+    'country': 'gb',
+    'name': 'England',
     'picture': require('@/assets/Flags/gb.png')
   },
   {
-    'pays': 'gr',
-    'country': 'Grèce',
+    'country': 'gr',
+    'name': 'Greece',
     'picture': require('@/assets/Flags/gr.png')
   },
   {
-    'pays': 'hk',
-    'country': 'HongKong',
+    'country': 'hk',
+    'name': 'HongKong',
     'picture': require('@/assets/Flags/hk.png')
   },
   {
-    'pays': 'hu',
-    'country': 'Hongrie',
+    'country': 'hu',
+    'name': 'Hungary',
     'picture': require('@/assets/Flags/hu.png')
   },
   {
-    'pays': 'id',
-    'country': 'Indonésie',
+    'country': 'id',
+    'name': 'Indonesia',
     'picture': require('@/assets/Flags/id.png')
   },
   {
-    'pays': 'ie',
-    'country': 'Irlande',
+    'country': 'ie',
+    'name': 'Ireland',
     'picture': require('@/assets/Flags/ie.png')
   },
   {
-    'pays': 'il',
-    'country': 'Israël',
+    'country': 'il',
+    'name': 'Israel',
     'picture': require('@/assets/Flags/il.png')
   },
   {
-    'pays': 'in',
-    'country': 'Inde',
+    'country': 'in',
+    'name': 'India',
     'picture': require('@/assets/Flags/in.png')
   },
   {
-    'pays': 'it',
-    'country': 'Italie',
+    'country': 'it',
+    'name': 'Italy',
     'picture': require('@/assets/Flags/it.png')
   },
   {
-    'pays': 'jp',
-    'country': 'Japon',
+    'country': 'jp',
+    'name': 'Japan',
     'picture': require('@/assets/Flags/jp.png')
   },
   {
-    'pays': 'kr',
-    'country': 'Corée du Sud',
+    'country': 'kr',
+    'name': 'South Korea',
     'picture': require('@/assets/Flags/kr.png')
   },
   {
-    'pays': 'lt',
-    'country': 'Lituanie',
+    'country': 'lt',
+    'name': 'Lithuania',
     'picture': require('@/assets/Flags/lt.png')
   },
   {
-    'pays': 'lv',
-    'country': 'Lettonie',
+    'country': 'lv',
+    'name': 'Latvia',
     'picture': require('@/assets/Flags/lv.png')
   },
   {
-    'pays': 'ma',
-    'country': 'Maroc',
+    'country': 'ma',
+    'name': 'Morocco',
     'picture': require('@/assets/Flags/ma.png')
   },
   {
-    'pays': 'mx',
-    'country': 'Mexique',
+    'country': 'mx',
+    'name': 'Mexico',
     'picture': require('@/assets/Flags/mx.png')
   },
   {
-    'pays': 'my',
-    'country': 'Malaisie',
+    'country': 'my',
+    'name': 'Malaysia',
     'picture': require('@/assets/Flags/my.png')
   },
   {
-    'pays': 'ng',
-    'country': 'Nigéria',
+    'country': 'ng',
+    'name': 'Nigeria',
     'picture': require('@/assets/Flags/ng.png')
   },
   {
-    'pays': 'nl',
-    'country': 'Pays-Bas',
+    'country': 'nl',
+    'name': 'Netherlands',
     'picture': require('@/assets/Flags/nl.png')
   },
   {
-    'pays': 'no',
-    'country': 'Norvège',
+    'country': 'no',
+    'name': 'Norway',
     'picture': require('@/assets/Flags/no.png')
   },
   {
-    'pays': 'nz',
-    'country': 'Nouvelle Zélande',
+    'country': 'nz',
+    'name': 'New Zealand',
     'picture': require('@/assets/Flags/nz.png')
   },
   {
-    'pays': 'ph',
-    'country': 'Philippines',
+    'country': 'ph',
+    'name': 'Philippines',
     'picture': require('@/assets/Flags/ph.png')
   },
   {
-    'pays': 'pl',
-    'country': 'Pologne',
+    'country': 'pl',
+    'name': 'Poland',
     'picture': require('@/assets/Flags/pl.png')
   },
   {
-    'pays': 'pt',
-    'country': 'Portugale',
+    'country': 'pt',
+    'name': 'Portugal',
     'picture': require('@/assets/Flags/pt.png')
   },
   {
-    'pays': 'ro',
-    'country': 'Roumanie',
+    'country': 'ro',
+    'name': 'Romania',
     'picture': require('@/assets/Flags/ro.png')
   },
   {
-    'pays': 'rs',
-    'country': 'Serbie',
+    'country': 'rs',
+    'name': 'Serbia',
     'picture': require('@/assets/Flags/rs.png')
   },
   {
-    'pays': 'ru',
-    'country': 'Russie',
+    'country': 'ru',
+    'name': 'Russia',
     'picture': require('@/assets/Flags/ru.png')
   },
   {
-    'pays': 'sa',
-    'country': 'Arabie Saoudite',
+    'country': 'sa',
+    'name': 'Saudi Arabia',
     'picture': require('@/assets/Flags/sa.png')
   },
   {
-    'pays': 'se',
-    'country': 'Suède',
+    'country': 'se',
+    'name': 'Sweden',
     'picture': require('@/assets/Flags/se.png')
   },
   {
-    'pays': 'sg',
-    'country': 'Singapour',
+    'country': 'sg',
+    'name': 'Singapore',
     'picture': require('@/assets/Flags/sg.png')
   },
   {
-    'pays': 'si',
-    'country': 'Slovenie',
+    'country': 'si',
+    'name': 'Slovenia',
     'picture': require('@/assets/Flags/si.png')
   },
   {
-    'pays': 'sk',
-    'country': 'Slovaquie',
+    'country': 'sk',
+    'name': 'Slovakia',
     'picture': require('@/assets/Flags/sk.png')
   },
   {
-    'pays': 'th',
-    'country': 'Thaïlande',
+    'country': 'th',
+    'name': 'Thailand',
     'picture': require('@/assets/Flags/th.png')
   },
   {
-    'pays': 'tr',
-    'country': 'Turquie',
+    'country': 'tr',
+    'name': 'Turkey',
     'picture': require('@/assets/Flags/tr.png')
   },
   {
-    'pays': 'tw',
-    'country': 'Taiwan',
+    'country': 'tw',
+    'name': 'Taiwan',
     'picture': require('@/assets/Flags/tw.png')
   },
   {
-    'pays': 'ua',
-    'country': 'Ukraine',
+    'country': 'ua',
+    'name': 'Ukraine',
     'picture': require('@/assets/Flags/ua.png')
   },
   {
-    'pays': 'us',
-    'country': 'Etats-Unis',
+    'country': 'us',
+    'name': 'United States',
     'picture': require('@/assets/Flags/us.png')
   },
   {
-    'pays': 've',
-    'country': 'Venezuela',
+    'country': 've',
+    'name': 'Venezuela',
     'picture': require('@/assets/Flags/ve.png')
   },
   {
-    'pays': 'za',
-    'country': 'Afrique du Sud',
+    'country': 'za',
+    'name': 'South Africa',
     'picture': require('@/assets/Flags/za.png')
   }
 ];

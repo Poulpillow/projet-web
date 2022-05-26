@@ -7,30 +7,17 @@
 </template>
 
 <script>
+import Header from './components/Header.vue'
 import Flags from './components/Flags.vue'
-import Header from './components/Header.vue';
-import Footer from './components/Footer.vue';
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    Flags,
     Header,
+    Flags,
     Footer
-},
-  data() {
-      return {
-        isModalVisible: false,
-      };
-    },
-    methods: {
-      showModal() {
-        this.isModalVisible = true;
-      },
-      closeModal() {
-        this.isModalVisible = false;
-      }
-    }
+  }
 }
 </script>
 

@@ -42,9 +42,8 @@
 
         <footer class="modal-footer">
           <slot name="footer">
-            Articles
+            End of articles
           </slot>
-
         </footer>
       </div>
     </div>
@@ -52,55 +51,35 @@
 </template>
 
 <script>
-import axios from "axios";
 
   export default {
     name: 'Modal',
     props: {
       prop_country: String,
+      post: Array
     },
     methods: {
       close() {
         this.$emit('close');
-      },
-      function() {
-        this.country=this.prop_country
-        axios
-        .get('https://newsapi.org/v2/top-headlines?country=' + this.country + '&apiKey=8839b49b1628405d90760d4384c02658')
-        .then(res => {
-            this.post = res.data.articles;
-            console.dir(this.post)
-        })
-    }
-    },
-    data() {
-    return {
-      post: null,
-      country: null,
-    };
-    },
-    watch: {
-      country: function(newCountry) {
-        localStorage.setItem("country", newCountry)
       }
-    },
-    created: function() {
-      this.function();
-    } 
+    }
   };
 </script>
 
 <style>
   .modal-backdrop {
+    /* position: -webkit-sticky; */
     position: absolute;
-    top: 50%;
-    left: 50%;
-    max-height: 60%;
-    transform: translate(-50%,-50%);
-    background-color: rgba(0, 0, 0, 0.3);
+    /* top: 60%; */
+    left: 50vw;
+   min-height: 40vh;
+    width: 100vw;
+    transform: translate(-50%,-25%);
+    /* background-color: rgba(0, 0, 0, 0.3); */
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 3;
   }
 
   .modal {
@@ -109,6 +88,7 @@ import axios from "axios";
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
+    position: fixed; 
   }
 
   .modal-header,
@@ -132,6 +112,9 @@ import axios from "axios";
   .modal-body {
     position: relative;
     padding: 20px 10px;
+    height: 60vh;
+    width: 90vw;
+    overflow-y: auto;
   }
 
   .btn-close {
