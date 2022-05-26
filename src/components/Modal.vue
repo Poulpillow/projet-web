@@ -11,7 +11,7 @@
           id="modalTitle"
         >
           <slot name="header">
-            Articles
+            The 20 most recent articles of {{country_name}}
           </slot>
           <button
             type="button"
@@ -42,7 +42,7 @@
 
         <footer class="modal-footer">
           <slot name="footer">
-            End of articles
+            Page of news
           </slot>
         </footer>
       </div>
@@ -51,11 +51,11 @@
 </template>
 
 <script>
-
   export default {
     name: 'Modal',
     props: {
       prop_country: String,
+      country_name: String,
       post: Array
     },
     methods: {
@@ -68,18 +68,16 @@
 
 <style>
   .modal-backdrop {
-    /* position: -webkit-sticky; */
     position: absolute;
-    /* top: 60%; */
     left: 50vw;
-   min-height: 40vh;
+    min-height: 40vh;
     width: 100vw;
     transform: translate(-50%,-25%);
-    /* background-color: rgba(0, 0, 0, 0.3); */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 3;
+    font-family: sans-serif;
   }
 
   .modal {
@@ -100,7 +98,7 @@
   .modal-header {
     position: relative;
     border-bottom: 1px solid #eeeeee;
-    color: #4AAE9B;
+    color: #00aced;
     justify-content: space-between;
   }
 
@@ -127,14 +125,14 @@
     padding: 10px;
     cursor: pointer;
     font-weight: bold;
-    color: #4AAE9B;
+    color: #00aced;
     background: transparent;
   }
 
   .btn-green {
     color: white;
-    background: #4AAE9B;
-    border: 1px solid #4AAE9B;
+    background-color: #00aced;
+    border: 1px solid #00aced;
     border-radius: 2px;
   }
 
@@ -146,5 +144,9 @@
   .modal-fade-enter-active,
   .modal-fade-leave-active {
     transition: opacity .5s ease;
+  }
+
+  * {
+    font-weight: bold;
   }
 </style>

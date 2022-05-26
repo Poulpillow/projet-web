@@ -14,5 +14,13 @@ export default {
 </script>
 
 <style scoped>
-
+.btn {
+  padding: 0;
+  width: 250px;
+  height: 150px;
+  color: lightgrey;
+}
+.btn:hover {
+  transform: scale(1.1)
+}
 </style>
