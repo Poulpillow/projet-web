@@ -113,7 +113,8 @@
     position: relative;
     padding: 20px 10px;
     height: 60vh;
-    width: 90vw;
+    min-width: 90vw;
+    max-width: 90vw;
     overflow-y: auto;
   }
 
